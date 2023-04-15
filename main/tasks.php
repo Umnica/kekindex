@@ -1,5 +1,21 @@
  <?php
 
+
+echo $_GET['subject'];
+
+print "<br>";
+
+for ($i=1; $i<=100; $i++){
+    print $i;
+    print " ";
+
+    if (fmod($i, 10) == 0) {
+        print "<br>";
+    }
+}
+
+
+
 ///////////1//////////////////
 
     print "<table border='1'>";
