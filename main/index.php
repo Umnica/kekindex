@@ -103,7 +103,14 @@
                 Ваше имя: <br>
                 <input type="text" name="login" placeholder="Имя" />
  
+<form name="form" action="" method="get">
+  <input type="text" name="subject" id="subject" value="Car Loan">
+  <button type="submit">123</button>
+</form>
+
 <?php 
+
+echo $_GET['subject'];
 
 print "<br>";
 
