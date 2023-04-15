@@ -136,4 +136,68 @@ for ($i=0; $i<intval($_GET['p']); $i++) {
 print "</table>"; 
 
 
+
+
+
+/////////////////2///////////////////
+print "2, 2.1";
+
+
+print "<br>";
+print "<table border='1' >";
+
+for ($i=0; $i<intval($_GET['p']); $i++) {
+    print "<tr>";
+    for ($j=1; $j<=intval($_GET['m']); $j++) {
+
+        print "<td>" . (($i+1)*$j) . "</td>";
+
+    }
+    
+
+    print "</tr>";
+}
+
+print "</table>"; 
+
+
+/////////////////2.2///////////////////
+print "2.2";
+
+print "<body>
+    
+    <form name='form' action='tasks.php' method='get'>
+      <input type='text' name='nMin' id='nMin' placeholder='nMin'>
+      <input type='text' name='nMax' id='nMax' placeholder='nMax'>
+      <input type='text' name='mMin' id='mMin' placeholder='mMin'>
+      <input type='text' name='mMax' id='mMax' placeholder='mMax'>
+      <button type='submit'>Решить</button>
+    </form>
+
+</body>";
+
+print "<br>";
+print "<table border='1' >";
+
+for ($i=0; $i<intval($_GET['nMax']); $i++) {
+    if ($i+1 > intval($_GET['nMin'])) {
+        print "<tr>";
+        for ($j=1; $j<=intval($_GET['mMax']); $j++) {
+
+            if ($j > intval($_GET['mMin'])) {
+                print "<td>" . (($i+1)*$j) . "</td>";
+            }
+            
+        }
+    }
+    
+
+    print "</tr>";
+}
+
+print "</table>"; 
+
+
+
+
 ?>
