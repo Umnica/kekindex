@@ -109,6 +109,24 @@ body{
     color: #d11414;
     background-color: white;
 }
+.reg-item1{
+    color: white;
+    text-decoration: none;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 25px;
+    line-height: 12px;
+
+    background-color: #d11414;
+
+    padding: 14px 20px;
+    border-radius: 20px;
+}
+.reg-item1.reg-item{
+    color: #d11414;
+    background-color: white;
+}
 
 #vk{
     width: 60px;
