@@ -103,7 +103,20 @@
                 Ваше имя: <br>
                 <input type="text" name="login" placeholder="Имя" />
  
+<?php 
 
+print "<br>";
+
+for ($i=1; $i<=100; $i++){
+    print $i;
+    print " ";
+
+    if (fmod($i, 10) == 0) {
+        print "<br>";
+    }
+}
+
+?>
 
         </div>
     </div>
