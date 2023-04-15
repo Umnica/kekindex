@@ -1,5 +1,15 @@
  <?php
 
+print "<body>
+    
+    <form name='form' action='tasks.php' method='get'>
+      <input type='text' name='p' id='p' placeholder='p'>
+      <input type='text' name='m' id='m' placeholder='m'>
+      <input type='text' name='c' id='c' placeholder='c'>
+      <button type='submit'>Решить</button>
+    </form>
+
+</body>";
 
 echo $_GET['subject'];
 
@@ -45,7 +55,7 @@ print "Введите управляющую переменную $m,10<$m<100
 , по 10 чисел в строке.";
 print "<br>";
 
-$m = 50; 
+$m = intval($_GET['p']); 
 print "<table border='1'>";
 for ($i = 1; $i <= $m; $i++){
     print "<tr>";
@@ -76,7 +86,7 @@ for ($i=1; $i<=100; $i++){
 
 print "<br>";
 
-for ($i=1; $i<=intval($_GET['subject']); $i++){
+for ($i=1; $i<=intval($_GET['m']); $i++){
     print $i;
     print " ";
 
@@ -105,7 +115,6 @@ for ($i=1; $i<=intval($_GET['p']); $i++){
 
 /////////////////1.4///////////////////
 print "1.4";
-print ;
 
 print "<br>";
 print "<table border='1' >";
