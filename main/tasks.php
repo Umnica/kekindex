@@ -105,6 +105,7 @@ for ($i=1; $i<=intval($_GET['p']); $i++){
 
 /////////////////1.4///////////////////
 print "1.4";
+print ;
 
 print "<br>";
 print "<table border='1' >";
