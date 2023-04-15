@@ -28,6 +28,7 @@
 
                     <a class="nav-item" href="@">Цены</a>
                     <a class="nav-item" href="@">О больнице</a>
+                    <a class="nav-item" href="tasks.html">Задания</a>
                     
                 </div>
                 
@@ -99,31 +100,8 @@
                     </TR>   
                   </TABLE>
                 </p>
-
-                Ваше имя: <br>
-                <input type="text" name="login" placeholder="Имя" />
- 
-<form name="form" action="" method="get">
-  <input type="text" name="subject" id="subject" value="Car Loan">
-  <button type="submit">123</button>
-</form>
-
-<?php 
-
-echo $_GET['subject'];
-
-print "<br>";
-
-for ($i=1; $i<=100; $i++){
-    print $i;
-    print " ";
-
-    if (fmod($i, 10) == 0) {
-        print "<br>";
-    }
-}
-
-?>
+            </div>
+                
 
         </div>
     </div>
