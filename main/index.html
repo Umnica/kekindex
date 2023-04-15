@@ -16,7 +16,16 @@
                 </div>
 
                 <div class="nav">
-                    <a class="nav-item" href="@">Врачи</a>
+
+                    <div class="dropdown">
+                      <button class="dropbtn nav-item">Врачи</button>
+                      <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                    </div>
+
                     <a class="nav-item" href="@">Цены</a>
                     <a class="nav-item" href="@">О больнице</a>
                     
@@ -29,7 +38,7 @@
                 </a>
 
                 <div class="reg">
-                    <a class="reg-item" href = "@">Записаться</a>
+                    <button class="reg-item" href = "/">Записаться</button>
                 </div>
 
 
@@ -48,7 +57,10 @@
                     </TR>   
                   </TABLE>
                 </p>
-            
+
+                Ваше имя: <br>
+                <input type="text" name="login" placeholder="Имя" />
+
         </div>
     </div>
 </body>
