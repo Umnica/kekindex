@@ -19,6 +19,7 @@ for ($i=1; $i<=100; $i++){
 
 
 
+
 ///////////1//////////////////
 print "1.1.";
 print "<br>";
@@ -67,28 +68,62 @@ for ($i=1; $i<=100; $i++){
     }
 }
 
-///////////1.4//////////////////
 
-$c = 3; // значение управляющей переменной
-echo "<table>";
 
-for ($i = 1; $i <= 10; $i++) {
-  echo "<tr>";
-  for ($j = 1; $j <= 10; $j++) {
-    $color = ($i * $j) % $c == 0 ? "red" : "black";
-    echo "<td style='color: $color'>" . $i * $j . "</td>";
-  }
-  echo "</tr>";
+///////////1.2//////////////////
+
+
+
+print "<br>";
+
+for ($i=1; $i<=intval($_GET['subject']); $i++){
+    print $i;
+    print " ";
+
+    if (fmod($i, 10) == 0) {
+        print "<br>";
+    }
 }
 
-echo "</table>";
+
+
+///////////1.3//////////////////
+
+
+print "<br>";
+
+for ($i=1; $i<=intval($_GET['p']); $i++){
+    print $i;
+    print " ";
+
+    if (fmod($i, intval($_GET['m'])) == 0) {
+        print "<br>";
+    }
+}
 
 
 
+/////////////////1.4///////////////////
 
 
+print "<br>";
+print "<table border='1' >";
+
+for ($i=0; $i<intval($_GET['p']); $i++) {
+    print "<tr>";
+    for ($j=1; $j<=intval($_GET['m']); $j++) {
 
 
+        $color = fmod((intval($_GET['m'])*$i+$j) , intval($_GET['c'])) == 0 ? "red" : "black";
+        print "<td style='color: $color'>" . (intval($_GET['m'])*$i+$j) . "</td>";
+
+    }
+    
+
+    print "</tr>";
+}
+
+print "</table>"; 
 
 
 ?>
